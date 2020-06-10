@@ -5,8 +5,8 @@ import {
   useRouteMatch
 } from 'react-router-dom';
 
-import CatFactList from './CatFactList';
-import SingleCatFact from './SingleCatFact';
+import CatFactList from '../components/CatFactList';
+import SingleCatFact from '../components/SingleCatFact';
 
 const CatFactsPage = () => {
   let match = useRouteMatch();

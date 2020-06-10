@@ -4,9 +4,9 @@ import {
   Route,
 } from "react-router-dom";
 
-import AboutPage from './AboutPage';
-import CatFactsPage from './CatFactsPage';
-import HomePage from './HomePage';
+import AboutPage from '../pages/AboutPage';
+import CatFactsPage from '../pages/CatFactsPage';
+import HomePage from '../pages/HomePage';
 
 const Routes = () => {
   return (
