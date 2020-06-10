@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './SingleCatFactDisplayInfo.css';
+
 const SingleCatFactDisplayInfo = (props) => {
     const {
         used,
@@ -15,7 +17,7 @@ const SingleCatFactDisplayInfo = (props) => {
     } = props;
 
     return (
-        <div>
+        <div className="single-cat-fact-display-info">
             { text }
         </div>
     );

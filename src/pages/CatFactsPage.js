@@ -8,11 +8,13 @@ import {
 import CatFactList from '../components/CatFactList';
 import SingleCatFact from '../components/SingleCatFact';
 
+import './CatFactsPage.css';
+
 const CatFactsPage = () => {
   let match = useRouteMatch();
 
   return (
-    <div>
+    <div className="cat-facts-page">
       <h1>Cat facts page</h1>
 
       <Switch>

@@ -8,13 +8,13 @@ const CatFactListItem = (props) => {
 
     return (
         <div className="cat-fact-list-item">
-            <div>id: {id}</div>
+            {/* <div>id: {id}</div>
             <div>type: {type}</div>
             <div>user: {JSON.stringify(user)}</div>
             <div>upvotes: {upvotes}</div>
 
             <br />
-            <br />
+            <br /> */}
             <b>{text}</b>
 
             <br />
