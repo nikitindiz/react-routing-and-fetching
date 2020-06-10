@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CatFactListItem from './CatFactListItem';
+
 class CatFactList extends React.Component {
     constructor(props) {
         super(props);
@@ -31,7 +33,18 @@ class CatFactList extends React.Component {
 
                 {status === 'SUCCEED' && (
                     <div>
-                        { catFacts.length } facts downloaded
+                        { catFacts.map((fact) => {
+                            return (
+                                <CatFactListItem
+                                    key={fact._id}
+                                    id={fact._id}
+                                    type={fact.type}
+                                    text={fact.text}
+                                    user={fact.user}
+                                    upvotes={fact.upvotes}
+                                />
+                            )
+                        }) }
                     </div>
                 )}
 
