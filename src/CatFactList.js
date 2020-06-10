@@ -1,11 +1,13 @@
 import React from 'react';
 
-const CatFactList = () => {
-    return (
-        <div>
-            Cat fact list
-        </div>
-    )
+class CatFactList extends React.Component {
+    render() {
+        return (
+            <div>
+                Cat fact list
+            </div>
+        )
+    }
 }
 
 export default CatFactList;
