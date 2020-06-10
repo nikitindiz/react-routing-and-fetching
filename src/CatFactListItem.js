@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './CatFactListItem.css';
 
@@ -11,9 +12,16 @@ const CatFactListItem = (props) => {
             <div>type: {type}</div>
             <div>user: {JSON.stringify(user)}</div>
             <div>upvotes: {upvotes}</div>
-            <br/>
-            <br/>
-            <b>{ text }</b>
+
+            <br />
+            <br />
+            <b>{text}</b>
+
+            <br />
+            <br />
+            <Link to={`/cat-facts/${id}`}>
+                Details
+            </Link>
         </div>
     );
 };
