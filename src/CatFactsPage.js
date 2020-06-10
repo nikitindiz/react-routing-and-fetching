@@ -2,44 +2,18 @@ import React from 'react';
 import {
   Switch,
   Route,
-  useRouteMatch,
-  useParams
+  useRouteMatch
 } from 'react-router-dom';
 
 import CatFactList from './CatFactList';
-
-class SingleCatFactFetcher extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div>
-        SingleCatFactFetcher {this.props.factId}
-      </div>
-    );
-  }
-
-  componentDidMount() {
-
-  }
-}
-
-const SingleCatFact = () => {
-  let { catFactId } = useParams();
-
-  return <SingleCatFactFetcher factId={catFactId} />
-};
+import SingleCatFact from './SingleCatFact';
 
 const CatFactsPage = () => {
   let match = useRouteMatch();
 
   return (
     <div>
-      Cat facts page
+      <h1>Cat facts page</h1>
 
       <Switch>
           <Route path={`${match.url}/:catFactId`} >
